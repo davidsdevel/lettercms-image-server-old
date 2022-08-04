@@ -1,0 +1,18 @@
+{
+  "name": "lettercms-files",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@lettercms/utils": "latest",
+    "@lettercms/models": "latest",
+    "express": "^4.18.1",
+    "formidable": "^2.0.1",
+    "mongoose": "^5.11.10",
+    "ibm-cos-sdk": "^1.12.2",
+    "sharp": "^0.30.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1"
+  }
+}

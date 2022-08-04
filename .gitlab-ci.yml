@@ -1,0 +1,16 @@
+image: ruby:2.6
+
+stages:
+  - deploy
+
+staging:
+  stage: deploy
+  script:
+    - gem install dpl
+    - rm -rf testing
+    - dpl --provider=heroku --app=lettercms-images --api-key=$HEROKU_API_KEY
+  environment:
+    name: staging
+    url: https://lettercms-images.herokuapp.com
+  only:
+    - main
