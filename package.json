@@ -7,7 +7,7 @@
     "@google-cloud/storage": "^6.1.0",
     "@lettercms/models": "^0.1.2",
     "@lettercms/utils": "^1.0.19",
-    "color-thief" :"^2.2.5",
+    "node-vibrant": "^3.2.1-alpha.1",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "formidable": "^2.0.1",
@@ -16,7 +16,6 @@
     "sharp": "^0.30.7"
   },
   "devDependencies": {
-    "node-vibrant": "^3.2.1-alpha.1",
     "dotenv": "^16.0.1",
     "form-data": "^4.0.0"
   }
