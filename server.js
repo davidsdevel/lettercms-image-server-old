@@ -15,6 +15,7 @@ const indexGet = require('./lib/index.get');
 const indexPost = require('./lib/index.post');
 const nameGet = require('./lib/name.get');
 const nameDelete = require('./lib/name.delete');
+const generateGet = require('./lib/generate.get');
 
 const corsOpts = {
   origin: true,
@@ -23,6 +24,8 @@ const corsOpts = {
   credentials: true,
   exposedHeaders: 'Authorization'
 }
+
+app.get('/api/svg', generateGet);
 
 app.use(cors(corsOpts))
 app.all('/api/image', manageMethods({
