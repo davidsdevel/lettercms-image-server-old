@@ -25,7 +25,10 @@ const corsOpts = {
   exposedHeaders: 'Authorization'
 }
 
-app.get('/api/svg', generateGet);
+app.get('/api/svg', cors({
+  origin: true,
+  methods: ['GET']
+}), generateGet);
 
 app.use(cors(corsOpts))
 app.all('/api/image', manageMethods({
